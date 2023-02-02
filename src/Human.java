@@ -2,7 +2,7 @@ public class Human {
      String name;
      int age;
      Animal pet;
-     public Car c;
+     private Car c;
 
       double salary;
 
@@ -22,7 +22,26 @@ public class Human {
                System.out.println("Zglosic sie do ZUS i US");
           }
      }
+
+     public Car getC() {
+          return c;
      }
+     public void set_car( Car c ){
+          if( this.salary > c.value ){
+               System.out.println("Zakupiono auto");
+               this.c = c;
+          }
+          else if( this.salary > (1/12)*c.value ){
+               System.out.println("Zakupiono auto na raty");
+               this.c = c;
+          }
+          else{
+               System.out.println("Idz do pracy biedaku");
+          }
+     }
+
+
+}
 
 
 

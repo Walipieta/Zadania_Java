@@ -5,6 +5,7 @@ public class Car {
    final String producer;
     int Year;
     double petrol ;
+   public  double value ;
 
 
     public Car (String model , String producer , int Year , double petrol){

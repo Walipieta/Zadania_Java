@@ -11,6 +11,9 @@ public class Main {
             pet.feed();
 
         }
+        Car c = new Car("E36" ,"BMW" , 2010 , 6 );
+        Human h = new Human();
+        h.c = c;
 
 
 

@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Animal pet =new Animal("cat");
+        Car c = new Car("E36" ,"BMW" , 2010 , 6 ,4000);
 
         for(int i = 0 ; i <5 ; i++){
             pet.feed();
@@ -11,9 +12,10 @@ public class Main {
             pet.feed();
 
         }
-        Car c = new Car("E36" ,"BMW" , 2010 , 6 );
+
         Human h = new Human();
-        h.c = c;
+        h.set_car(c);
+        h.set_salary(10000);
 
 
 

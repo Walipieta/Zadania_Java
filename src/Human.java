@@ -6,7 +6,7 @@ public class Human {
 
       double salary;
 
-     Double   get_salary()
+     double get_salary()
      {
           System.out.println(" Pobrano we wtorek i wynosila:"  + salary);
           return salary;
@@ -49,4 +49,4 @@ public class Human {
 
 
 
-}
+

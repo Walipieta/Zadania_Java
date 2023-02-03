@@ -1,14 +1,10 @@
-import device.Car;
+package device;
 
-public class Human {
-     String name;
-     int age;
-     Animal pet;
-     private Car c;
-
-      double salary;
-
-     double get_salary()
+class Human {
+      private Car c;
+      Device d;
+      double salary, cash = 2000;
+     public double get_salary()
      {
           System.out.println(" Pobrano we wtorek i wynosila:"  + salary);
           return salary;

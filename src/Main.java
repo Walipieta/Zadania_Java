@@ -1,14 +1,16 @@
 import device.Car;
+import device.Device;
+import device.Phone;
+
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Animal pet =new Animal("PIESS",10,"Arek",5,true);
-        Animal pet1 = new Animal("KOT",5,"FELIX",1,false);
-        Car c = new Car("E36" ,"BMW" , 2010 , 6 ,4000);
-        Car c1 = new Car("2000", "Audi", 1999, 2, 100);
-        Car c2 = new Car("2000", "Audi", 1999, 2, 100);
+        Car c1 = new Car("FOCUS", "Ford", 2002, 8, 2000);
+        Car c2 =  new Car( "R8","Audi", 2000, 10, 10000);
+
         if( !c1.equals(c2) ){
             System.out.println("Takie same");
         }
@@ -16,23 +18,16 @@ public class Main {
             System.out.println("Inne");
         }
         System.out.println(c1);
+        ArrayList<Device> De = new ArrayList<Device>();
+        Device dd = new Phone();
+        De.add(dd);
+        Device ddd = new Car( "R8","Audi", 2000, 10, 10000);
+        De.add(ddd);
 
-        for(int i = 0 ; i <5 ; i++){
-            pet.feed();
-            pet.takeForAWalk();
-            pet.feed();
-
+        for ( Device i : De ){
+            i.turnOn();
         }
 
-        Human h = new Human();
-        h.set_car(c);
-        h.set_salary(10000);
-        c.toString();
-        pet.toString();
-
-        System.out.println(c1.equals(c2));
-
-        System.out.println(pet1);
 
 
 

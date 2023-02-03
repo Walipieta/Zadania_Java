@@ -1,35 +1,37 @@
-import java.sql.SQLOutput;
-
 public class Animal {
-    final String species;
-    private double weight ;
+    String species;
+    double weight ;
     String name;
     int age;
-    static boolean isAlive;
+    boolean isAlive;
 
 
 
 
 
-    public Animal(String species){
+
+    public  Animal(String species , double weight, String name , int age ,boolean isAlive){
         this.species = species ;
-        isAlive = true;
-        switch (species) {
-
-            case "wolf":
-                weight = 20;
-                break;
-            case "elephant":
-                weight = 500;
-                break;
-            case "cat": weight = 4;
+        this.weight = weight;
+        this.name  = name ;
+        this.age = age  ;
+        this.isAlive =  isAlive;
 
 
 
-        }
+
+
+
 
 
     }
+
+    public String toString(){
+        return species+ " " +weight+ " " +name+ " " +age+ " " +isAlive+ "\n";
+    }
+
+
+
 
 
 

@@ -1,3 +1,5 @@
+package device;
+
 public class Car {
 
 
@@ -8,11 +10,14 @@ public class Car {
    public  double value ;
 
 
-    public Car (String model , String producer , int Year , double petrol,double value){
+    public Car (final String model , String producer , int Year , double petrol,double value){
         this.model = model;
         this.producer = producer;
         this.Year = Year;
         this.petrol = petrol;
         this.value = value;
+    }
+    public String toString(){
+        return model+ " " +producer+ " " +Year+ " " +petrol+ " " +value+ "\n";
     }
 }

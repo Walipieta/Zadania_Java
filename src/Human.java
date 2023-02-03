@@ -1,3 +1,5 @@
+import device.Car;
+
 public class Human {
      String name;
      int age;
@@ -39,7 +41,9 @@ public class Human {
                System.out.println("Idz do pracy biedaku");
           }
      }
-
+     public String toString(){
+          return salary + "\n";
+     }
 
 }
 
